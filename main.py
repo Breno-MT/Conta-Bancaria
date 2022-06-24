@@ -1,5 +1,3 @@
-import conta_modulo as conta
+import conta_modulo as cm
 
-conta_1 = conta.Conta('Breno', '001')
-
-conta.Conta.main_menu()
+cm.Conta.main_menu()
