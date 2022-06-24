@@ -6,6 +6,5 @@
 - 💰 Depósitos
 - 💳 Transferências
 - 🧾 Extrato Bancário
-
-### 🛠 Instruções
+## 🛠 Instruções
 - Execute apenas o main.py e divirta-se! 😁
