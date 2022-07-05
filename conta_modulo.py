@@ -99,7 +99,7 @@ class Conta:
         conta_1 = Conta(nome_conta, '001')
 
         while True:
-            opcao = int(input(f"""
+            opcao = input(f"""
             ___________________________________________________________________________
             |                           Olá! Bem-vindo(a) ao Conecta Banco!
             |
@@ -115,25 +115,27 @@ class Conta:
             |    
             |
             |
-            |   [->] """))
+            |   [->] """)
             
-            if opcao == 1:
+            if opcao == '1':
                 opcao = conta_1.saque()
 
-            elif opcao == 2:
+            elif opcao == '2':
                 opcao = conta_1.depositar()
 
-            elif opcao == 3:
+            elif opcao == '3':
                 opcao = conta_1.transferir()
 
-            elif opcao == 4:
+            elif opcao == '4':
                 print(conta_1)
 
-            elif opcao == 0:
+            elif opcao == '0':
                 break
 
             else:
-                print("Digite apenas uma das opções acima.")
+                print("             ___________________________________________________________________________")
+                print("                                 Digite apenas uma das opções acima.")
+                print("             ---------------------------------------------------------------------------")
 
     # Este método especial irá printar a conta
     def __str__(self):
