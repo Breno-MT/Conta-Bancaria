@@ -13,9 +13,12 @@ class Conta:
         if valor <= 0:
             print("O valor deve ser acima de R$ 0.01 !")
         
-        elif valor >= 0.01: 
+        elif valor >= 0.01 and valor <= 15000: 
             print(f"Depósito no valor de R${valor:.2f}! Efetuado com sucesso!!!")
             self.__saldo += valor
+        
+        elif valor > 15000:
+            print(f"O valor não pode passar de R$ 15000.00 ! Valor de tentativa de depósito: R${valor:.2f}")
 
     # Função de saque
     def saque(self):
